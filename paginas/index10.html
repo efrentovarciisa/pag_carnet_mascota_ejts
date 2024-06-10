@@ -1,0 +1,310 @@
+<!DOCTYPE html>  <!--DOCTYPE html es una declaración que se utiliza para informar al navegador web 
+la versión del lenguaje de marcado utilizado en el documento HTML es HTML5.No es una etiqueta HTML, 
+sino una instrucción para el navegador web sobre qué versión de HTML se utilizó al escribir el documento --> 
+
+ <!--html lang="es"establece el idioma del contenido del documento como español (es) y en ingles es (en) 
+El atributo lang se utiliza para describir el idioma del contenido del documento--> 
+  <html lang="es">
+
+      <!--head se utiliza para incluir información importante sobre la página que no se muestra 
+    directamente en el contenido visible-->
+  <head>
+
+      <!--charset="UTF-8"se utiliza para definir la codificación de caracteres de la página web.
+      Esto ayuda a mostrar correctamente los caracteres especiales o acentuados en tu página web--> 
+       <meta charset="UTF-8">
+
+        <!--meta name="viewport" content="width=device-width, initial-scale=1.0"se utiliza para 
+        controlar el diseño de la página web en dispositivos móviles. Esta etiqueta hace que la 
+        página sea responsive, es decir, se adapta al ancho del dispositivo y establece la escala 
+        inicial al cargar la página. Esto ayuda a mejorar la experiencia del usuario en dispositivos móviles--> 
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--title se utiliza para definir el título de la página web. 
+      Este título se muestra en la pestaña del navegador y también se utiliza como el título 
+      en los resultados de búsqueda de Google y otros motores de búsqueda--> 
+       <title> carnet de mascostas </title> 
+       
+       <!--link de el script referencia a pagina de bootstrap para estilo y botones -->      
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+       
+       <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+       <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.3.6/css/buttons.dataTables.min.css">
+
+
+       <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+       <!--link para referencia al documento cssde la carpeta para estilo de la pagina-->
+       <link rel="stylesheet" href="css/estilo.css"> 
+  </head>
+  
+  <!--pagina VACUNAS-->
+
+  <!--body que representa el cuerpo del documento HTML-->
+  <body>
+
+    <!--este es el inicio del div  de la barra de inicio para todos las paginas-->
+
+    <!--id css para el fondo o foto de la barra de navegacion-->
+    <div id="div_barra_inicio">
+      
+      <h2 style="margin: auto; font-family: 'Comic Sans MS'; color: rgb(0, 3, 7); font-weight: bold;font-size: 28px;">CARNET
+        DE MASCOTAS</h2>
+             <p style="margin: auto; font-family: 'Comic Sans MS'; color: rgb(0, 3, 7); font-size: 22px;">CARNET
+         este el mejor sitio para llevar el control de tu mascota ya que es tu mejor aliado.</p>
+
+        <!--id css para las el estilo tamaño y color de la letra de la barra de navegacion-->
+        <div id="div_link_barra_inicio">
+          
+           <!--link para referencia las imagenes del documento index html-->
+          <img src="img/logo.png" alt="logo" width="30" height="30"> 
+
+          <!--link para referencia a otras paginas index del documento html-->
+          <a href="index.html">INICIO</a>
+          <a href="index2.html">GALERIA</a>
+          <a href="index3.html">PERFIL</a>
+          <a href="index4.html">CONTROLES MEDICOS</a>
+          <a href="index5.html">MEDICAMENTOS</a>
+          <a href="index6.html">TRATAMIENTOS</a>
+          <a href="index7.html">VACUNAS</a>
+          <a href="index8.html">DUEÑO</a>
+          <a href="index9.html">PERFIL DEL DUEÑO</a>
+          <a href="index10.html">REGISTRAR</a>
+          
+        <img src="img/logo.png" alt="logo" width="30" height="30">
+      </div>    
+<!--id css para el fondo de toda la pagina-->       
+<div id="div_fondo_pagina">
+  <br> <br><br>
+  <!--este es el fin del div  de la barra de inicio para todos las paginas -->
+
+        <main class="form-signin w-30% m-auto">
+            <form>
+                <div class="img-container">
+                    <img class="mb-4" src="img/logo.png" alt="" width="10%" height="10%">
+                    <img class="mb-4" src="img/logo.png" alt="" width="10%" height="10%">
+                    <img class="mb-4" src="img/logo.png" alt="" width="10%" height="10%">
+                    <img class="mb-4" src="img/logo.png" alt="" width="10%" height="10%">
+                </div>
+            </form>
+        </main>
+<!-- este estilo style css controla la imagen del logo para que este centrado -->
+        <style>
+            .img-container {
+                display: flex;
+                justify-content: space-between;
+            }
+        </style>  
+        
+<!-- este estilo style css controla el formulario de pagina de contacto -->
+<style>
+                .form-group {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  margin-bottom: 10px;
+                }
+                .form-group input {
+                  width: 50%;
+                }
+                .form-group label {
+                  margin-right: 10px;
+                }
+                .center-text {
+                  text-align: center;
+                }
+                .center {
+                  display: flex;
+                  justify-content: center;
+                }
+                .input-small {
+                  width: 50%;
+                }
+              </style>
+
+        <!-- Registro -->
+        <h1 class="h3 mb-3 fw-normal center-text">POR FAVOR REGISTARSE AQUI</h1>
+
+        <form id="registerForm">
+
+            <div class="form-floating mx-auto" style="width: 50%;">
+                
+                <input type="email" class="form-control" id="floatingInput" placeholder="Ingrese su email" required>
+                <label for="floatingInput">Ingrese su email</label>
+            </div>
+            <div class="form-floating mx-auto" style="width: 50%;">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Contraseña" pattern="^(?=.*[0-9])(?=.*[a-zA-Z]).{6,}$" required>
+                <label for="floatingPassword">Contraseña</label>
+            </div>
+            <p class="center">LA CONTRASEÑA DEBE CONTENER AL MENOS 6 CARACTERES<BR> DEBE CONTENER AL MENOS UN NÚMERO <BR>  DEBE CONTENER AL MENOS UNA LETRA (MAYÚSCULA O MINÚSCULA).</p>
+            <div class="form-check text-start my-3" style="margin-left: 50%;">
+                <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">Recordar</label>
+            </div>
+            <div class="center">
+                <button class="btn btn-primary btn-small py-2" type="submit">Enviar</button>
+            </div>
+        </form>
+        <br><br><br><br>
+
+        
+        <!-- Contacto -->
+
+        <div style="width:100%; text-align:center;">
+            <h2 id="miH2" class="h3 mb-3 fw-normal center-text">PÁGINA DE CONTACTO</h2>
+            
+
+            <form id="contactForm">
+                <div class="form-group center">
+                    <input type="text" class="form-control input-small" id="name" name="name" placeholder="Introduce tu nombre" required>
+                </div>
+                <div class="form-group center">
+                    <input type="email" class="form-control input-small" id="email" name="email" placeholder="Introduce tu correo electrónico" required>
+                </div>
+                <div class="form-group center">
+                    <input type="tel" class="form-control input-small" id="phone" name="phone" pattern="\+[0-9]{11}" placeholder="Introduce tu número de teléfono debe tener +56 9 seguido del nro. "  required>
+                    
+                </div>
+                <div class="form-group center">
+                    <input type="text" class="form-control input-small" id="direccion" name="direccion" placeholder="Introduce tu dirección" required>
+                </div>
+                <div class="form-group center">
+                    <select id="requestType" class="form-control input-small" name="requestType" required>
+                        <option value="consulta">Consulta</option>
+                        <option value="error del sistema">Error del sistema</option>
+                        <option value="reclamo">Reclamo</option>
+                    </select>
+                </div>
+                <div class="form-group center">
+                    <textarea id="message" class="form-control input-small" name="message" placeholder="Introduce tu mensaje" required></textarea>
+                </div>
+                <div class="center">
+                    <button class="btn btn-primary btn-small py-2" type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- SweetAlert2 -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script>  
+            // Validación de Formulario de Registro
+            document.getElementById('registerForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+                if (this.checkValidity()) {
+                    Swal.fire({
+                        title: '¡Éxito! ahora puedes avanzar',
+                        text: 'Formulario de registro enviado correctamente.',
+                        icon: 'success'
+                    });
+                } else {
+                    Swal.fire({
+                        title: 'Error',
+                        text: 'Por favor, completa todos los campos requeridos deben esta llenos con tu imformacion .',
+                        icon: 'error'
+                    });
+                }
+            });
+
+            // Validación de Formulario de Contacto
+            document.getElementById('contactForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+                if (this.checkValidity()) {
+                    Swal.fire({
+                        position: "top-end",
+                        icon: "success",
+                        title: "¡Éxito! ahora puedes avanzar",
+                        showConfirmButton: false,
+                        timer: 1500
+                    });
+                } else {
+                    Swal.fire({
+                        title: 'Error',
+                        text: 'Por favor, completa todos los campos requeridos deben esta llenos con tu imformacion .',
+                        icon: 'error'
+                    });
+                }
+            });
+        </script>
+<br><br><br><br>
+        
+<br><br><br><br><br><br>
+        <!-- Información de Contacto -->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-10 text-center">
+                    <h2>Información de Contacto</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover" style="width: 100%;">
+                            <thead>
+                                <tr>
+                                    <th>Teléfono</th>
+                                    <th>Instagram</th>
+                                    <th>TikTok</th>
+                                    <th>Twitter</th>
+                                    <th>Dirección</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>+56951517865</td>
+                                    <td>@ANIMALADAS</td>
+                                    <td>ANIMALADAS.twitter.com</td>
+                                    <td>ANIMALADAS.tiktok.com</td>
+                                    <td>Santiago de Chile, RM, Paseo Ahumada 125</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- Pie de Página -->
+    <footer>
+        <div id="div_telefono" class="container d-flex flex-column flex-md-row justify-content-around align-items-center text-center">
+          
+          
+          <div class="p-2">
+            <p style="margin-left:auto;">CONTACTANOS</p>
+            <a href="index10.html">
+              <img src="img/TELEFONO.png" alt="TELEFONO" class="img-fluid" style="width: 100px; height: auto;">
+            </a>
+          </div>  
+          
+          <div class="p-2">
+            <p style="margin: left auto;;">MUESTRAS REDES SOCIALES</p>
+            <a href="index10.html">
+              <img src="img/redes_sociales.jpg" alt="redes_sociales" class="img-fluid" style="width: 240px; height: auto;">
+            </a>
+          </div>  
+          
+          <div class="p-2">
+            <p style="margin-left:auto;">UBICANOS EN SANTIAGO DE CHILE</p>
+            <a href="index10.html">
+              <img src="img/ubicanos.jpg" alt="Ubicanos" class="img-fluid" style="width: 100px; height: auto;">
+            </a>
+          </div>
+        </div>
+        <div class="container-fluid p-2">
+          <p style="text-align:center;">DERECHOS DE AUTOR</p>
+          <p style="text-align:center;">© 2024 EFREN TOVAR. Todos los derechos reservados.</p>
+        </div>
+      </footer>
+
+   <!-- Scripts -->
+   <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+   <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+   <script src="https://cdn.datatables.net/buttons/2.3.6/js/dataTables.buttons.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+   <script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.html5.min.js"></script>
+   <script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.print.min.js"></script>
+   <script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.colVis.min.js"></script>
+   <script src="js/index10.js"></script>
+
+   
+</body>
+</html>

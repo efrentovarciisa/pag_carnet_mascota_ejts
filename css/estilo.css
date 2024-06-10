@@ -1,0 +1,21 @@
+#div_barra_inicio {
+    background-image: url(img/fondo_barra_inicio.jpg);
+    background-size: auto;
+}
+
+#div_link_barra_inicio a {
+    
+        color: rgb(0, 0, 0);
+        font-size: 14px;
+        font-weight: bold;
+        font-family: 'Comic Sans MS';
+        margin: auto;
+    
+}
+
+#div_fondo_pagina{
+     background-color: rgb(65, 156, 177);
+
+    }
+
+    

@@ -1,0 +1,149 @@
+<!DOCTYPE html>  <!--DOCTYPE html es una declaración que se utiliza para informar al navegador web 
+la versión del lenguaje de marcado utilizado en el documento HTML es HTML5.No es una etiqueta HTML, 
+sino una instrucción para el navegador web sobre qué versión de HTML se utilizó al escribir el documento --> 
+
+ <!--html lang="es"establece el idioma del contenido del documento como español (es) y en ingles es (en) 
+El atributo lang se utiliza para describir el idioma del contenido del documento--> 
+  <html lang="es">
+
+      <!--head se utiliza para incluir información importante sobre la página que no se muestra 
+    directamente en el contenido visible-->
+  <head>
+
+      <!--charset="UTF-8"se utiliza para definir la codificación de caracteres de la página web.
+      Esto ayuda a mostrar correctamente los caracteres especiales o acentuados en tu página web--> 
+       <meta charset="UTF-8">
+
+        <!--meta name="viewport" content="width=device-width, initial-scale=1.0"se utiliza para 
+        controlar el diseño de la página web en dispositivos móviles. Esta etiqueta hace que la 
+        página sea responsive, es decir, se adapta al ancho del dispositivo y establece la escala 
+        inicial al cargar la página. Esto ayuda a mejorar la experiencia del usuario en dispositivos móviles--> 
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--title se utiliza para definir el título de la página web. 
+      Este título se muestra en la pestaña del navegador y también se utiliza como el título 
+      en los resultados de búsqueda de Google y otros motores de búsqueda--> 
+       <title> carnet de mascostas </title> 
+       
+       <!--link de el script referencia a pagina de bootstrap para estilo y botones -->      
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> 
+
+       <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+       <!--link para referencia al documento cssde la carpeta para estilo de la pagina-->
+       <link rel="stylesheet" href="css/estilo.css"> 
+  </head>
+
+  <!--pagina CONTROLES MEDICOS-->
+
+  <!--body que representa el cuerpo del documento HTML-->
+  <body>
+
+    <!--este es el inicio del div  de la barra de inicio para todos las paginas-->
+
+    <!--id css para el fondo o foto de la barra de navegacion-->
+    <div id="div_barra_inicio">
+      
+      <h2 style="margin: auto; font-family: 'Comic Sans MS'; color: rgb(0, 3, 7); font-weight: bold;font-size: 28px;">CARNET
+        DE MASCOTAS</h2>
+             <p style="margin: auto; font-family: 'Comic Sans MS'; color: rgb(0, 3, 7); font-size: 22px;">CARNET
+         este el mejor sitio para llevar el control de tu mascota ya que es tu mejor aliado.</p>
+
+        <!--id css para las el estilo tamaño y color de la letra de la barra de navegacion-->
+        <div id="div_link_barra_inicio">
+          
+           <!--link para referencia las imagenes del documento index html-->
+          <img src="img/logo.png" alt="logo" width="30" height="30"> 
+
+          <!--link para referencia a otras paginas index del documento html-->
+          <a href="index.html">INICIO</a>
+          <a href="index2.html">GALERIA</a>
+          <a href="index3.html">PERFIL</a>
+          <a href="index4.html">CONTROLES MEDICOS</a>
+          <a href="index5.html">MEDICAMENTOS</a>
+          <a href="index6.html">TRATAMIENTOS</a>
+          <a href="index7.html">VACUNAS</a>
+          <a href="index8.html">DUEÑO</a>
+          <a href="index9.html">PERFIL DEL DUEÑO</a>
+          <a href="index10.html">REGISTRAR</a>
+          
+        <img src="img/logo.png" alt="logo" width="30" height="30">
+      </div>    
+<!--id css para el fondo de toda la pagina-->       
+<div id="div_fondo_pagina" class="text-center">
+  <br> <br><br>
+  <!--este es el fin del div  de la barra de inicio para todos las paginas -->
+        <h1 style="font-family: 'Comic Sans MS'; color: rgb(1, 28, 63); font-weight: bold; font-size: 40px;">CONTROLES MEDICOS</h1>
+    
+    <!-- Formulario y botones -->
+ <!--Este es un código HTML que crea una tabla para mostrar información sobre controles médicos. -->
+
+    <!--Este es un contenedor que agrupa todo el contenido relacionado con la tabla. La clase mt-5 es una clase de Bootstrap que añade un margen superior (margin-top) de 5 unidades-->
+    <div class="container mt-5">
+
+         <!--Aquí se crea la tabla con el ID controlesMedicos. Las clases table, table-striped y table-hover son clases de Bootstrap que dan estilo a la tabla-->
+        <table id="controlesMedicos" class="table table-striped table-hover">
+
+             <!--Dentro de la tabla, se define el encabezado (<thead>) y el cuerpo (<tbody>).
+En el encabezado, cada <th> define una columna de la tabla y Las columnas En el cuerpo de la tabla, cada <tr> define una fila y cada <td> dentro de la fila define una celda.-->
+            <thead>
+                <tr>
+                    <th>NOMBRE DEL MEDICO</th>
+                    <th>NOMBRE DE LA MASCOTA</th>
+                    <th>FECHA DEL CONTROL</th>
+                    <th>PRECIO DE LA CONSULTA</th>
+                    <th>FECHA DEL PROXIMO CONTROL</th>
+                    <th>OBSERVACIONES</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Jose</td>
+                    <td>Chispa</td>
+                    <td>16/04/2026</td>
+                    <td>$20.000</td>
+                    <td>16/04/2026</td>
+                    <td>Escribe las observaciones</td>
+
+                     <!--Dentro de la celda “Acción”, hay un botón que al hacer clic en él, llama a la función eliminarFila(this). Esta función  está definida en algún lugar del código JavaScript para eliminar la fila correspondiente de la tabla. -->
+                    <td><button onclick="eliminarFila(this)" class="btn btn-outline-danger">Eliminar</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+         <!--fuera de la tabla pero todavía dentro del contenedor, hay un botón que al hacer clic en él, llama a la función agregarFila(). Esta función  está definida en el código JavaScript para agregar una nueva fila a la tabla. -->
+        <button onclick="agregarFila()" class="btn btn-outline-primary">Agregar</button>
+    </div>
+<br><br><br><br><br>
+
+    <!-- Pie de página -->
+    <footer class="text-center mt-4">
+        <div class="container d-flex flex-column flex-md-row justify-content-around align-items-center">
+            <div class="p-2">
+                <p>CONTACTANOS</p>
+                <a href="index10.html">
+                    <img src="img/TELEFONO.png" alt="TELEFONO" class="img-fluid" style="width: 100px; height: auto;">
+                </a>
+            </div>
+            <div class="p-2">
+                <p>MUESTRAS REDES SOCIALES</p>
+                <a href="index10.html">
+                    <img src="img/redes_sociales.jpg" alt="redes_sociales" class="img-fluid" style="width: 240px; height: auto;">
+                </a>
+            </div>
+            <div class="p-2">
+                <p>UBICANOS EN SANTIAGO DE CHILE</p>
+                <a href="index10.html">
+                    <img src="img/ubicanos.jpg" alt="Ubicanos" class="img-fluid" style="width: 100px; height: auto;">
+                </a>
+            </div>
+        </div>
+        <div class="container-fluid p-2">
+            <p>DERECHOS DE AUTOR</p>
+            <p>© 2024 EFREN TOVAR. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

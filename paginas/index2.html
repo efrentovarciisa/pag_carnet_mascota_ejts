@@ -1,0 +1,475 @@
+<!DOCTYPE html>  <!--DOCTYPE html es una declaración que se utiliza para informar al navegador web 
+la versión del lenguaje de marcado utilizado en el documento HTML es HTML5.No es una etiqueta HTML, 
+sino una instrucción para el navegador web sobre qué versión de HTML se utilizó al escribir el documento --> 
+
+ <!--html lang="es"establece el idioma del contenido del documento como español (es) y en ingles es (en) 
+El atributo lang se utiliza para describir el idioma del contenido del documento--> 
+  <html lang="es">
+
+      <!--head se utiliza para incluir información importante sobre la página que no se muestra 
+    directamente en el contenido visible-->
+  <head>
+
+      <!--charset="UTF-8"se utiliza para definir la codificación de caracteres de la página web.
+      Esto ayuda a mostrar correctamente los caracteres especiales o acentuados en tu página web--> 
+       <meta charset="UTF-8">
+
+        <!--meta name="viewport" content="width=device-width, initial-scale=1.0"se utiliza para 
+        controlar el diseño de la página web en dispositivos móviles. Esta etiqueta hace que la 
+        página sea responsive, es decir, se adapta al ancho del dispositivo y establece la escala 
+        inicial al cargar la página. Esto ayuda a mejorar la experiencia del usuario en dispositivos móviles--> 
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--title se utiliza para definir el título de la página web. 
+      Este título se muestra en la pestaña del navegador y también se utiliza como el título 
+      en los resultados de búsqueda de Google y otros motores de búsqueda--> 
+       <title> carnet de mascostas </title> 
+       
+       <!--link de el script referencia a pagina de bootstrap para estilo y botones -->      
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> 
+
+       <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.3.6/css/buttons.dataTables.min.css">
+
+       <!--link para referencia al documento cssde la carpeta para estilo de la pagina-->
+       <link rel="stylesheet" href="css/estilo.css"> 
+   
+
+        <style>
+        .d-block.w-100 {
+            max-height: 700px; 
+            width: auto; 
+        }
+        </style>
+    <style>
+        .carousel-caption h5 {
+            font-family: 'Arial', sans-serif;
+            color: rgb(1, 28, 63);
+            font-weight: bold;
+            font-size: 28px;
+        }
+
+        .carousel-caption p {
+            font-family: 'Times New Roman', serif;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-size: 20px;
+        }
+    </style>
+ 
+    <style>
+      .navbar-custom {
+        background-color: rgb(65,156,177);
+      }
+    </style>
+  </head>
+    <!--pagina de galeria-->
+
+  <!--body que representa el cuerpo del documento HTML-->
+  <body>
+
+    <!--este es el inicio del div  de la barra de inicio para todos las paginas-->
+
+    <!--id css para el fondo o foto de la barra de navegacion-->
+    <div id="div_barra_inicio">
+      
+      <h2 style="margin: auto; font-family: 'Comic Sans MS'; color: rgb(0, 3, 7); font-weight: bold;font-size: 28px;">CARNET
+        DE MASCOTAS</h2>
+             <p style="margin: auto; font-family: 'Comic Sans MS'; color: rgb(0, 3, 7); font-size: 22px;">CARNET
+         este el mejor sitio para llevar el control de tu mascota ya que es tu mejor aliado.</p>
+
+        <!--id css para las el estilo tamaño y color de la letra de la barra de navegacion-->
+        <div id="div_link_barra_inicio">
+          
+           <!--link para referencia las imagenes del documento index html-->
+          <img src="img/logo.png" alt="logo" width="30" height="30"> 
+
+          <!--link para referencia a otras paginas index del documento html-->
+          <a href="index.html">INICIO</a>
+          <a href="index2.html">GALERIA</a>
+          <a href="index3.html">PERFIL</a>
+          <a href="index4.html">CONTROLES MEDICOS</a>
+          <a href="index5.html">MEDICAMENTOS</a>
+          <a href="index6.html">TRATAMIENTOS</a>
+          <a href="index7.html">VACUNAS</a>
+          <a href="index8.html">DUEÑO</a>
+          <a href="index9.html">PERFIL DEL DUEÑO</a>
+          <a href="index10.html">REGISTRAR</a>
+          
+        <img src="img/logo.png" alt="logo" width="30" height="30">
+      </div>    
+<!--id css para el fondo de toda la pagina-->       
+<div id="div_fondo_pagina">
+  <br> <br><br>
+  <!--este es el fin del div  de la barra de inicio para todos las paginas -->
+
+<!--es el inicio de la barra de navegacion segundaria usando bootstrap con un menu de busqueda
+   con boton le agrege href para enlazar al futuro los textos -->
+     <div class="pos-f-t">
+       <div class="collapse" id="navbarToggleExternalContent" style="background-color:rgb(19, 19, 19);">
+        <div style="background-color:rgb(65, 156, 177);">
+          <h4 class="text-black">Información sobre perros(barra de navegacion navarb segundaria)</h4>
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link text-black" href="#">La taxonomía de los perros</a></li>
+            <li class="nav-item"><a class="nav-link text-black" href="#">El origen de los perros</a></li>
+            <li class="nav-item"><a class="nav-link text-black" href="#">Características físicas de los perros</a></li>
+            <li class="nav-item"><a class="nav-link text-black" href="#">La conducta social del perro</a></li>
+            <li class="nav-item"><a class="nav-link text-black" href="#">La alimentación del perro</a></li>
+            <li class="nav-item"><a class="nav-link text-black" href="#">Los sentidos del perro</a></li>
+            <li class="nav-item"><a class="nav-link text-black" href="#">Las razas de perros</a></li>
+            <li class="nav-item"><a class="nav-link text-black" href="#">entrenamiento del perro</a></li>
+          </ul>
+        </div>
+      </div>
+      <nav class="navbar navbar-dark navbar-custom">
+        <button class="navbar-toggler" type="button" style="background-color:rgb(0, 0, 0);" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!--Barra de búsqueda-->
+        <div class="container-auto ml-auto">
+          <form class="form-inline">
+            <!--boton de la Barra de búsqueda-->
+            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
+          </form>
+        </div>
+      </nav>
+    </div>
+    <!--es el fin de la barra de navegacion segundaria usando bootstrap con un menu de busqueda-->
+    
+      <!--inicio de los las imagenes de logo gps campana de alerta-->
+        <br> <br><br><br> 
+        <div class="row justify-content-end">
+          <div class="col-md-2">
+              <img src="img/logo.png" alt="logo" class="img-fluid" style="width: 50%;">
+          </div>
+          <div class="col-md-2">
+              <img src="img/GPS.jpg" alt="logo" class="img-fluid" style="width: 50%;">
+          </div>
+          <div class="col-md-2">
+              <img src="img/notificaciones.jpg" alt="logo" class="img-fluid" style="width: 80%;">
+          </div>
+      </div>
+     
+      <!--inicio Button modal galeria imagenes-->
+      <div style="display: flex; justify-content: center;">
+        <!--Button trigger modal-->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          PNCHE AQUI PARA INFORMACION  SOBRE EL GPS (BOTON MODAL)
+        </button>
+        
+        <!--Modal-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">API DE GEOLOCALIZACIÓN GPS</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                La API de geolocalización permite al usuario compartir su ubicación a las aplicaciones web si así lo desea. Por razones de privacidad, al usuario se le pide que confirme el permiso para proporcionar información de ubicación.
+
+Las WebExtensions que deseen utilizar el objeto Geolocation deben agregar el permiso "geolocation" a su manifiesto. El sistema operativo del usuario le indicará que permita el acceso a la ubicación la primera vez que se solicite.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CERRAR</button>
+                <a href="index10.html" class="btn btn-primary" role="button">
+                  SOLICITUD GPS
+              </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--fin Button modal galeria imagenes-->
+        
+        
+      <!--fin de los las imagenes de logo gps campana de alerta-->
+      <br><br><br><br>
+<!--inicio de el titulo imagenes-->
+  <div style="width: 100%; text-align: center;">
+  
+    <div class="container text-center">
+      <h1 style="font-family: 'Comic Sans MS'; color: rgb(1, 28, 63); font-weight: bold; font-size: 60px;">GALERIAS IMAGENES</h1>
+    </div>
+  </div>
+  <!--fin de el titulo imagenes-->
+
+  <!--pagina de galeria bootstrap carrusel inicio carrusel de imágenes con Bootstrap-->
+
+  <!--div class="row justify-content-center" Esta es una fila en Bootstrap que utiliza la clase justify-content-center para centrar el contenido horizontalmente-->
+          <div class="row justify-content-center" >
+    
+            <!--div class="col-md-8" Esta es una columna en Bootstrap que ocupa 8 de las 12 columnas disponibles en pantallas medianas (md) y más grandes-->
+            <div class="col-md-8">
+
+               <!--div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">: Este es el contenedor principal del carrusel. La clase carousel y slide son necesarias para el funcionamiento del carrusel. El atributo data-bs-ride="carousel" hace que el carrusel comience a reproducirse automáticamente cuando la página se carga. -->
+              <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        
+             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2">
+             </button>
+             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3">
+              </button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4">
+             </button>
+            </div>
+            <!--div class="carousel-inner" Este div contiene las diapositivas del carrusel. Cada diapositiva es un div con la clase carousel-item. La primera diapositiva también tiene la clase active, lo que significa que será la primera en mostrarse. -->
+             <div class="carousel-inner">
+               <div class="carousel-item active">
+              <img src="img/perro1.jpg" alt="perro1" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                <h5>husky siberiano</h5>
+                 <p>El husky siberiano tiene las orejas erguidas y los ojos de marrones a azules o también dispares. Lleva el cuello recto y la línea superior está nivelada. La cola, bien cubierta de pelo, forma una hoz hacia arriba o bien se extiende hacia atrás. Tienen un pelo muy denso y afelpado con una importante capa interna..</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/perro2.jpg" class="d-block w-100" alt="perro2">
+
+          <!-- Este div contiene el título y la descripción de la diapositiva. La clase carousel-caption es necesaria para el estilo correcto. Las clases d-none y d-md-block hacen que el título y la descripción estén ocultos en pantallas pequeñas y visibles en pantallas medianas y más grandes. -->
+          <div class="carousel-caption d-none d-md-block">
+            <h5>  husky siberiano caracter </h5>
+            <p>El husky siberiano tiene un carácter afable, una gran ética de trabajo y un gran instinto cazador. Es extrovertido a la hora de conocer a nuevas personas, niños y otros perros, y suele querer a todo el mundo (así que no es el mejor perro guardián). Otras características que lo describen son su bondad, inteligencia y vitalidad, por no hablar de su condición atlética. A la mayoría de las personas les fascina la belleza de este perro, pero su dueño debe ser consciente de las exigentes características de esta raza. Aullar, correr y escarbar está en su naturaleza, y si no desfoga su energía con deporte regular, puede llegar a ser destructivo.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/perro3.jpg" class="d-block w-100" alt="perro3">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>husky siberiano tamaño y peso</h5>
+            <p>Es una raza de tamaño mediano cuyo peso oscila entre los 20 y los 27 kg en machos y entre los 16 y los 23 kg en hembras. La altura de los machos va de los 53 a los 60 cm y la de las hembras de 51 a 56 cm..</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/perro4.jpg" class="d-block w-100" alt="perro4">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>husky siberiano alimentacion</h5>
+            <p>Al igual que el resto de las razas, la cantidad de comida dependerá del tamaño, peso y estado de salud del perro. Y lo que es más importante, al ser un perro muy activo, debe corresponderse con el nivel de actividad del perro. Haz siempre lo que sea mejor para tu perro y consulta a tu veterinario si tienes alguna duda.</p>
+          </div>
+        </div>
+        </div>
+        <!-- Este botón permite al usuario ir a la diapositiva anterior. El atributo data-bs-target="#carouselExampleCaptions" indica a qué carrusel se aplica este botón y data-bs-slide="prev" indica que este botón llevará al usuario a la diapositiva anterior-->
+           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Previous</span>
+          </button>
+             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"    data-bs-slide="next">
+             <span class="carousel-control-next-icon" aria-hidden="true"></span>
+             <span class="visually-hidden">Next</span>
+             </button>
+       </div>
+     </div>
+   </div>
+  <!--pagina de galeria bootstrap carrusel fin-->
+
+
+<!-- -->
+<br><br>
+  <!--pagina de galeria bootstrap tarjeta 1  inicio-->
+
+  <!--div class="container"Este es un contenedor que envuelve todo el contenido. En Bootstrap, los contenedores son usados para alinear y centrar el contenido -->
+  <div class="container">
+
+    <!--Esto crea una fila en el contenedor-->
+    <div class="row">
+
+      <!-- Esto crea una columna que ocupa 6 de las 12 columnas disponibles en la cuadrícula de Bootstrap en pantallas medianas (md) y más grandes-->
+      <div class="col-md-6"> 
+
+        <!--Esta es una imagen del perro. La imagen se encuentra en la carpeta “img” y se llama “perro1.jpg”. La clase “card-img-top” se usa para alinear la imagen en la parte superior de la tarjeta-->
+     <img src= "img/perro1.jpg" class= "card-img-top" class= "card" style= "width:18rem;" alt= "perro1">  
+
+     <!-- Este div contiene el cuerpo de la tarjeta-->
+    <div class= "card-body" class= "card-img-top" class= "card" style= "width:18rem;">
+
+      <!--Este es el título de la tarjeta. El texto “CHISPA” está centrado y en negrita. -->
+      <h5 class="card-title text-center" style="font-family: 'Comic Sans MS'; color: rgb(0, 3, 7); font-weight: bold;"> CHISPA</h5>
+
+      <!--Este es el texto de la tarjeta. Describe a Chispa como un perro de la raza husky de 2 años de edad-->
+      <p class="card-text text-center font-weight-bold">es un perro de la raza husky tiene 2 años de edad.</p>
+
+      <!--Este es un botón que lleva al usuario a “index3.html” cuando se hace clic en él. El texto del botón es “pinchar aqui si deseas saber mas-->
+      <a href="index3.html" class="btn btn-primary"> pinchar aqui si deseas saber mas </a>
+    </div>
+  </div>
+  <!--pagina de galeria bootstrap tarjeta 1  fin-->
+
+
+  <!--acordion 1 inicio-->
+
+  <!-- Esto crea una columna que ocupa 6 de las 12 columnas disponibles en la cuadrícula de Bootstrap en pantallas medianas (md) y más grandes. -->
+  <div class="col-md-6">
+
+    <!--Este es el contenedor del acordeón. El ID “accordionPanelsStayOpenExample” se usa para asociar los elementos del acordeón-->
+<div class="accordion" id="accordionPanelsStayOpenExample">
+
+  <!-- Cada “accordion-item” representa un panel del acordeón que puede ser expandido o colapsado. -->
+  <div class="accordion-item">
+
+    <!--Este es el encabezado del panel del acordeón. Cuando se hace clic en él, se expande o colapsa el contenido asociado. -->
+    <h2 class="accordion-header">
+
+      <!--Este es el botón que controla la expansión y colapso del contenido del acordeón. El atributo “data-bs-target” se usa para asociar este botón con el contenido que controla -->
+      <button style="font-family: 'Comic Sans MS';font-weight: bold;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+        informacion desplegable#1
+      </button>
+    </h2>
+
+    <!--Este es el contenido que se muestra u oculta cuando se hace clic en el botón del acordeón. El ID debe coincidir con el valor del atributo “data-bs-target” del botón asociado. -->
+    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+      <div class="accordion-body">
+        <strong style="font-family: 'Comic Sans MS';">aca esta la infomacion general del perro.</strong> Husky siberiano
+        El husky siberiano tiene las orejas erguidas y los ojos de marrones a azules o también dispares. Lleva el cuello recto y la línea superior está nivelada. La cola, bien cubierta de pelo, forma una hoz hacia arriba o bien se extiende hacia atrás. Tienen un pelo muy denso y afelpado con una importante capa interna..
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button style="font-family: 'Comic Sans MS';font-weight: bold;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+        informacion desplegable#2
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+      <div class="accordion-body">
+        <strong style="font-family: 'Comic Sans MS';">caracter husky siberiano.</strong> 
+        El husky siberiano tiene un carácter afable, una gran ética de trabajo y un gran instinto cazador. Es extrovertido a la hora de conocer a nuevas personas, niños y otros perros, y suele querer a todo el mundo (así que no es el mejor perro guardián). Otras características que lo describen son su bondad, inteligencia y vitalidad, por no hablar de su condición atlética. A la mayoría de las personas les fascina la belleza de este perro, pero su dueño debe ser consciente de las exigentes características de esta raza. Aullar, correr y escarbar está en su naturaleza, y si no desfoga su energía con el deporte regular, puede llegar a ser destructivo..
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button style="font-family: 'Comic Sans MS';font-weight: bold;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+        informacion desplegable#3
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+      <div class="accordion-body">
+        <strong style="font-family: 'Comic Sans MS';">husky siberiano tamaño y peso.</strong> 
+        Es una raza de tamaño mediano cuyo peso oscila entre los 20 y los 27 kg en machos y entre los 16 y los 23 kg en hembras. La altura de los machos va de los 53 a los 60 cm y la de las hembras de 51 a 56 cm..
+      </div>
+    </div>
+  </div>
+</div>
+<!--acordion 1 fin-->
+ <br><br><br><br><br><br><br><br><br>
+ 
+ </div>
+  <!--pagina de galeria bootstrap tarjeta 2  inicio-->
+
+  <div  style="display: flex; justify-content: flex-end;">
+    <div class="card-body2" style="width:18rem;">
+      
+      <img src="img/perro2.jpg" class="card-img-top" class= "card" style="width:18rem;" alt="perro2">  
+      <div class="card-body2" class="card-img-top" class= "card" style="width:18rem;">
+        <h5 class="card-title text-center" style="font-family: 'Comic Sans MS'; color: rgb(0, 3, 7); font-weight: bold;"> CHISPA</h5>
+        <p class="card-text text-center font-weight-bold">es un perro de la raza husky tiene 2 años de edad.</p>
+        <a href="index3.html" class="btn btn-primary"> pinchar aqui si deseas saber mas </a>
+      </div>
+    </div>
+</div>
+</div>
+<!--pagina de galeria bootstrap tarjeta 2  fin-->
+
+  <!--este es el fin pie de pagina-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+  </script>
+
+ <!--tuve que inverstigar un poco para que pueda funcionar la barra de navegacion desplegable  no esta optimizada devido a que tengo que investiagar mas lei que tenia que ageagar estos script-->
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+
+ <!-- -->
+<br><br><br><br>
+        <!-- Datos de API -->
+
+         <!-- Este div envuelve todo el contenido y lo centra en la página-->
+        <div style="width:100%; text-align:center;">
+          
+          <!--Este es un contenedor que envuelve los elementos internos. En Bootstrap, los contenedores son usados para alinear y centrar el contenido.-->
+        <div class="container">
+            <h2>Datos de API</h2>
+            <br><br>
+
+            <!--Esta es una tabla que se utilizará para mostrar los datos de la API. El ID “apiDataTable”  se usa en JavaScript para referenciar esta tabla y llenarla con datos.-->
+            <table id="apiDataTable" class="display" style="width:100%">
+
+              <!-- Estos son los elementos de la cabecera y el cuerpo de la tabla. La cabecera define las columnas de la tabla y el cuerpo contendrá los datos. -->
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>SubRazas</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+        <div class="container">
+            
+            <h2 class="h3 mb-3 fw-normal center-text">IMAGENES</h2>
+            <div class="center-text">
+
+              <!-- Este es un botón que, cuando se hace clic en él,  hace una solicitud a una API para obtener una imagen aleatoria de un perro. El ID “randomDogButton”  se usa en JavaScript para agregar un evento de clic a este botón. -->
+                <button class="btn btn-primary" id="randomDogButton">pincha aqui para Mostrar Imagen Aleatoria de razas de  Perro</button>
+            </div>
+
+            <!--Esta es una imagen que se utilizará para mostrar la imagen aleatoria de un perro obtenida de la API. El ID “randomDogImage”  se usa en JavaScript para cambiar la fuente de la imagen cuando se obtiene la imagen de la API. -->
+            <div class="center-text">
+                <img id="randomDogImage" src="" alt="Imagen de un perro aleatorio" style="max-width: 300px; margin-top: 20px;">
+                <p id="breedName" style="margin-top: 10px;"></p>
+            </div>
+        </div>
+    
+
+        
+<br><br><br><br><br><br>
+
+    <!-- Pie de Página -->
+    <footer>
+        <div id="div_telefono" class="container d-flex flex-column flex-md-row justify-content-around align-items-center text-center">
+          
+          
+          <div class="p-2">
+            <p style="margin-left:auto;">CONTACTANOS</p>
+            <a href="index10.html">
+              <img src="img/TELEFONO.png" alt="TELEFONO" class="img-fluid" style="width: 100px; height: auto;">
+            </a>
+          </div>  
+          
+          <div class="p-2">
+            <p style="margin: left auto;;">MUESTRAS REDES SOCIALES</p>
+            <a href="index10.html">
+              <img src="img/redes_sociales.jpg" alt="redes_sociales" class="img-fluid" style="width: 240px; height: auto;">
+            </a>
+          </div>  
+          
+          <div class="p-2">
+            <p style="margin-left:auto;">UBICANOS EN SANTIAGO DE CHILE</p>
+            <a href="index10.html">
+              <img src="img/ubicanos.jpg" alt="Ubicanos" class="img-fluid" style="width: 100px; height: auto;">
+            </a>
+          </div>
+        </div>
+        <div class="container-fluid p-2">
+          <p style="text-align:center;">DERECHOS DE AUTOR</p>
+          <p style="text-align:center;">© 2024 EFREN TOVAR. Todos los derechos reservados.</p>
+        </div>
+      </footer>
+   <!-- Scripts -->
+   <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+   <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+   <script src="https://cdn.datatables.net/buttons/2.3.6/js/dataTables.buttons.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+   <script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.html5.min.js"></script>
+   <script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.print.min.js"></script>
+   <script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.colVis.min.js"></script>
+   <script src="js/index10.js"></script>
+
+<!-- script src="scripts.js" está haciendo referencia a un archivo JavaScript externo llamado “scripts.js” y lo está ejecutando en la página HTML.-->
+   <script src="scripts.js"></script>
+</body>
+</html>
+
